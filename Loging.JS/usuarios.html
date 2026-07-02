@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios - ACME</title>
+    <link rel="stylesheet" href="css/usuarios.css">
+    <script src="js/storage.js" defer></script>
+    <script src="js/usuarios.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <form id ="formUsuario">
+
+            <label>Numero de identificación</label>
+            <input type="text" id="id" required>
+
+            <label>Nombre Completo</label>
+            <input type="text" id="nombre" required>
+
+            <label>Cargo</label>
+            <input type="text" id="cargo" required>
+
+            <label>Contraseña</label>
+            <input type="password" id="password" required>
+
+            <label>Confirmar Contraseña</label>
+            <input type="password" id="confirmar" required>
+
+            <button type="submit">Guardar Usuario</button>
+
+        </form>
+
+        <p id="mensaje"></p>
+
+        <hr>
+
+        <h2>Usuarios Registrados</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Identificación</th>
+                    <th>Nombre</th>
+                    <th>Cargo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaUsuarios">
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
